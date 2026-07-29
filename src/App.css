@@ -1073,7 +1073,109 @@
     color: #666;
     font-weight: normal;
 }
+/* =========================
+   LOGIN / SIGNUP RESPONSIVE
+========================= */
 
+/* Tablet */
+@media (max-width: 768px) {
+
+    .login,
+    .signup,
+    .forgot-password {
+        width: 90%;
+        max-width: 380px;
+        margin: 50px auto;
+        padding: 30px 25px;
+        box-sizing: border-box;
+    }
+
+    .login h1,
+    .signup h1,
+    .forgot-password h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .login p,
+    .signup p,
+    .forgot-password p {
+        font-size: 14px;
+    }
+
+    .login input,
+    .signup input,
+    .forgot-password input {
+        padding: 11px;
+        font-size: 14px;
+    }
+
+    .login button,
+    .signup button,
+    .forgot-password button {
+        padding: 11px;
+        font-size: 16px;
+    }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    .login,
+    .signup,
+    .forgot-password {
+        width: calc(100% - 30px);
+        margin: 35px auto;
+        padding: 25px 18px;
+        border-radius: 10px;
+    }
+
+    .login h1,
+    .signup h1,
+    .forgot-password h1 {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
+    .login p,
+    .signup p,
+    .forgot-password p {
+        font-size: 13px;
+        margin: 12px 0 7px;
+    }
+
+    .login input,
+    .signup input,
+    .forgot-password input {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .login button,
+    .signup button,
+    .forgot-password button {
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    .login a,
+    .signup a,
+    .forgot-password a {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+
+    .login h4,
+    .signup h4,
+    .forgot-password h4 {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+}
 
 /* ===========================
    Cart Container
@@ -1182,31 +1284,133 @@
    Responsive
 =========================== */
 
-@media (max-width:768px){
+/* =========================
+   CART RESPONSIVE DESIGN
+========================= */
 
-    .cart-container{
-        width:95%;
-        padding:20px;
+/* Tablet */
+@media (max-width: 992px) {
+
+    .cart-container {
+        width: 92%;
+        padding: 25px;
     }
 
-    .cart-table th,
-    .cart-table td{
-        padding:10px;
-        font-size:15px;
+    .cart-table th {
+        padding: 13px;
+        font-size: 16px;
     }
 
-    .cart-container h2{
-        font-size:1.6rem;
+    .cart-table td {
+        padding: 12px;
+        font-size: 15px;
     }
 
-    .cart-container h3{
-        font-size:1.4rem;
+    .cart-container h2 {
+        font-size: 1.8rem;
     }
 
-    .confirm_order_btn{
-        width:100%;
+    .cart-container h3 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .cart-container {
+        width: 95%;
+        margin: 25px auto;
+        padding: 20px 15px;
+        box-sizing: border-box;
     }
 
+    .cart-container h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    /* Allow table to scroll horizontally */
+    .cart-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        border-radius: 8px;
+    }
+
+    .cart-table th {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .cart-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .cart-container h3 {
+        font-size: 1.3rem;
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    .confirm_order_btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        margin-top: 25px;
+    }
+
+    .delete-btn {
+        padding: 7px 12px;
+        font-size: 13px;
+    }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    .cart-container {
+        width: calc(100% - 20px);
+        margin: 20px auto;
+        padding: 18px 10px;
+        border-radius: 10px;
+    }
+
+    .cart-container h2 {
+        font-size: 1.3rem;
+    }
+
+    .cart-container p {
+        font-size: 1rem;
+    }
+
+    .cart-table th {
+        padding: 9px;
+        font-size: 13px;
+    }
+
+    .cart-table td {
+        padding: 9px;
+        font-size: 13px;
+    }
+
+    .cart-container h3 {
+        font-size: 1.2rem;
+    }
+
+    .confirm_order_btn {
+        font-size: 15px;
+        padding: 11px;
+    }
+
+    .delete-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
 }
 .delete-btn{
     background: #e53935;

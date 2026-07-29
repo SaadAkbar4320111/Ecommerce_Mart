@@ -18,14 +18,13 @@ function Hero() {
   };
 
   // Auto-play every 12 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
-    }, 3000);
+ useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrent((prev) => (prev + 1) % images.length);
+  }, 3000);
 
-    return () => clearInterval(interval);
-  }, []);
-
+  return () => clearInterval(interval);
+}, [images.length]);
   return (
     <div className="hero">
 
